@@ -22,14 +22,15 @@ body{
     display:grid;
     grid-template-columns:repeat(12,1fr);
     grid-template-rows:repeat(16,1fr);
-    gap:0.2rem;
     height:100vh;
+    margin-top:-10px;
+    margin-bottom:-10px;
 }
 .header{
     grid-column:2/-1;
     grid-row: 16/17;
     padding:0.5rem;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
 }
 .dashboard{
     grid-row: 1/17;
@@ -39,6 +40,8 @@ body{
 .content{
     grid-column:2/-1;
     background-color: var(--main-color);
+    position:relative;
+    padding:0.5rem;
 }
 .footer{
     grid-column:2/-1;
