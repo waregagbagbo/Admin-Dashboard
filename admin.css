@@ -16,30 +16,34 @@ body{
     font-size:var(--font-size);
     background-color:var(--tertiary-color);
     color:var(--main-color);
+    padding:20px;
 }
 .container{
     display:grid;
-    grid-template-columns:repeat(autofit,minmax(150px,1fr));
-    grid-template-rows:repeat(12, 1fr);
-    gap:20px;
+    grid-template-columns:repeat(12,1fr);
+    grid-template-rows:repeat(16,1fr);
+    gap:0.2rem;
+    height:100vh;
 }
 .header{
-    grid-column: 2/12;
+    grid-column:2/-1;
+    grid-row: 16/17;
     padding:0.5rem;
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 }
 .dashboard{
-    grid-row: 1/-1;
+    grid-row: 1/17;
     background-color: var(--primary-color);
     padding:0.5rem;
 }
 .content{
-    grid-column:2/12;
+    grid-column:2/-1;
     background-color: var(--main-color);
 }
 .footer{
-    grid-column:2/12;
+    grid-column:2/-1;
+    grid-row: 16/17;
     background-color: var(--secondary-color);
-    position:relative
-    bottom:0;
+    position:relative;
+    padding:0.5rem;
 }
