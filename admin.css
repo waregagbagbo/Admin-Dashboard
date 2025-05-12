@@ -90,8 +90,18 @@ body{
     box-shadow: 0 14px 18px rgba(0,0,0,0.1);
     border-radius: 5px;
 }
-#one #two #three #four #five #six{
-    font-size:0.rem;
-    font-weight:800;
-    color:var(--font-color);
+.text-section{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--font-color);
+    margin: 10px 0;
+    padding: 10px;
+    text-align:left;
+    margin-left:-10px;
+}
+#headline{
+    text-align:left;
+    font-size:15px;
+    font-weight: bold;
+    color: var(--font-color);
 }
