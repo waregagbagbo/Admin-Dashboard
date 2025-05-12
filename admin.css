@@ -109,4 +109,26 @@ body{
     justify-content: right;
     gap:10px;
 }
+.upper-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    top:-30px;
+    position: relative;
+    max-width:40vw;
+    margin-left:-10px;
+}
+.second-header{
+    display:flex;
+    justify-content:right;
+    gap:20px;
+    top:-50px;
+    position:relative;
+}
+#user-profile{
+    margin-right:-10px;
+}
 
