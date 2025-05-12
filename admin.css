@@ -71,7 +71,7 @@ body{
 }
 
 /* content section items */
-.main{
+.contents{
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     gap: 20px;
@@ -79,10 +79,16 @@ body{
 .content-items{
     background-color:var(--tertiary-color);
     color:var(--main-color);
-    padding:20px;
+    padding: 20px;
     box-shadow: 0 24px 28px rgba(0,0,0,0.1);
     border-radius: 5px;
-    border-left: 3px solid #B06500;
+}
+.content-items{
+    background-color:var(--tertiary-color);
+    color:var(--main-color);
+    padding: 20px;
+    box-shadow: 0 14px 18px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 .text-section{
     font-family: var(--font-family);
