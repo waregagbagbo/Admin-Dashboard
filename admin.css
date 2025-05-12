@@ -32,11 +32,13 @@ body{
     min-height:100vh;
 }
 .header{
-    background-color:var(--main-color);
+    background-color:var(--primary-color);
     color:var(--tertiary-color);
     text-align:center;
     grid-area:header;
     padding:3rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 .dashboard{
     background-color:var(--secondary-color);
@@ -107,3 +109,4 @@ body{
     justify-content: right;
     gap:10px;
 }
+
