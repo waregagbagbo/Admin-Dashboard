@@ -23,12 +23,12 @@ body{
 }
 .container{
     display:grid;
-    grid-template-columns:250px 1fr 1fr 1fr;
+    grid-template-columns:250px 1fr 1fr;
     grid-template-rows:auto 1fr auto;
     grid-template-areas:
-        "dashboard header header header"
-        "dashboard content content content"
-        "dashboard footer footer footer";
+        "dashboard header header"
+        "dashboard content content"
+        "dashboard footer footer";
     min-height:100vh;
 }
 .header{
@@ -36,14 +36,13 @@ body{
     color:var(--tertiary-color);
     text-align:center;
     grid-area:header;
-    padding:3rem;
+    padding:1.5rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-radius: 5px;
+    border-radius: 2px;
 }
 .dashboard{
     background-color:var(--secondary-color);
     color:var(--tertiary-color);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
     grid-area:dashboard;
 }
@@ -51,11 +50,10 @@ body{
     background-color:var(--tertiary-color);
     color:var(--main-color);
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     grid-area:content;
 }
 .footer{
-    background-color:var(--main-color);
+    background-color:var(--primary-color);
     color:var(--tertiary-color);
     text-align:center;
     grid-area:footer;
@@ -107,7 +105,7 @@ body{
 .icons-setup{
     display: flex;
     justify-content: right;
-    gap:10px;
+    gap:20px;
 }
 .upper-header{
     display: flex;
@@ -115,8 +113,9 @@ body{
     align-items: center;
     padding: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-radius: 5px;
-    top:-30px;
+    border-radius: 2px;
+    top:10px;
+    bottom:10px;
     position: relative;
     max-width:40vw;
     margin-left:-10px;
@@ -125,7 +124,7 @@ body{
     display:flex;
     justify-content:right;
     gap:20px;
-    top:-50px;
+    top:-10px;
     position:relative;
 }
 #user-profile{
